@@ -12,9 +12,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     - name: Katalon Studio
-      uses: katalon-studio/katalon-studio-github-action@v2.2
+      uses: katalon-studio/katalon-studio-github-action@v2.3
       with:
-          version: '8.5.2'
+          version: '7.5.5'
           projectPath: '${{ github.workspace }}'
           args: > 
             '-noSplash -retry=0 -testSuiteCollectionPath="Test Suites/Simple Test Suite Collection" 
